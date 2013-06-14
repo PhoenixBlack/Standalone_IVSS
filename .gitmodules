@@ -1,0 +1,12 @@
+[submodule "external/ivss"]
+	path = external/ivss
+	url = https://github.com/FoxWorks/IVSS
+[submodule "external/simc"]
+	path = external/simc
+	url = https://github.com/FoxWorks/SIMC
+[submodule "external/lua"]
+	path = external/lua
+	url = git://repo.or.cz/lua.git
+[submodule "external/pce"]
+	path = external/pce
+	url = git://git.hampa.ch/pce.git
