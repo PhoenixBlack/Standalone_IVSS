@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <GLFW/glfw3.h>
 #include <ivss.h>
 #include "ivss_sim_lua.h"
 #include "ivss_sim_gldisplay.h"

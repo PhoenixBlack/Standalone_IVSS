@@ -13,17 +13,20 @@ if not os.isdir("../debug") then os.mkdir("../debug") end
 --------------------------------------------------------------------------------
 -- Lua
 --------------------------------------------------------------------------------
-project "lua"
-   uuid "CE2BC989-5641-194B-A3B7-01020475664D"
-   kind "StaticLib"
-   language "C"
-   includedirs { "../external/lua/src" }
-   files { "../external/lua/src/**" }
-   excludes {
-     "../external/lua/src/lua.c",
-     "../external/lua/src/luac.c",
-     "../external/lua/src/print.c",
-   }
+local USE_LUAJIT = true
+if not USE_LUAJIT then
+   project "lua"
+      uuid "CE2BC989-5641-194B-A3B7-01020475664D"
+      kind "StaticLib"
+      language "C"
+      includedirs { "../external/lua/src" }
+      files { "../external/lua/src/**" }
+      excludes {
+        "../external/lua/src/lua.c",
+        "../external/lua/src/luac.c",
+        "../external/lua/src/print.c",
+      }
+end
 
 
 --------------------------------------------------------------------------------
@@ -70,7 +73,6 @@ project "standalone_ivss"
      "../include",
      "../external/ivss/include",
      "../external/simc/include",
-     "../external/lua/src",
      "../external/glfw/include",
      "../external/glfw/deps/GL",
      "../source",
@@ -82,7 +84,22 @@ project "standalone_ivss"
      "../external/ivss/addons/ivss_sim_lua/**",
      "../external/ivss/addons/ivss_sim_gldisplay/**",
    }
-   links { "simc", "ivss", "lua", "glfw" }
+   links { "simc", "ivss", "glfw" }
+   
+   if USE_LUAJIT then
+     links "luajit"
+     includedirs "../external/luajit"
+     if os.is("windows") then
+       if os.is64bit() then
+         libdirs "../external/luajit/win64"
+       else
+         libdirs "../external/luajit/win32"
+       end
+     end
+   else
+     links "lua"
+     includedirs "../external/lua/src"
+   end
    
    configuration "windows"
       links { "opengl32" }

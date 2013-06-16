@@ -43,7 +43,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -61,17 +61,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\luad32.lib ..\..\bin\glfwd32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd32.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				SubSystem="1"
@@ -129,7 +129,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -147,17 +147,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\luad.lib ..\..\bin\glfwd.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				SubSystem="1"
@@ -214,7 +214,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -231,17 +231,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\lua32.lib ..\..\bin\glfw32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss32.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				SubSystem="1"
@@ -301,7 +301,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -318,17 +318,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\lua.lib ..\..\bin\glfw.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				SubSystem="1"
@@ -387,7 +387,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -405,17 +405,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\luad32.lib ..\..\bin\glfwd32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd32.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				SubSystem="1"
@@ -473,7 +473,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -491,17 +491,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\luad.lib ..\..\bin\glfwd.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				SubSystem="1"
@@ -558,7 +558,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -575,17 +575,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\lua32.lib ..\..\bin\glfw32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss32.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				SubSystem="1"
@@ -645,7 +645,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -662,17 +662,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\lua.lib ..\..\bin\glfw.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				SubSystem="1"
@@ -731,7 +731,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -749,17 +749,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\lua_std32.lib ..\..\bin\glfw_std32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std32.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				SubSystem="1"
@@ -817,7 +817,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -835,17 +835,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\lua_std.lib ..\..\bin\glfw_std.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				SubSystem="1"
@@ -902,7 +902,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -919,17 +919,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\lua_st32.lib ..\..\bin\glfw_st32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st32.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				SubSystem="1"
@@ -989,7 +989,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -1006,17 +1006,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\lua_st.lib ..\..\bin\glfw_st.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				SubSystem="1"
@@ -1075,7 +1075,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -1093,17 +1093,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\lua_std32.lib ..\..\bin\glfw_std32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std32.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				SubSystem="1"
@@ -1161,7 +1161,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -1179,17 +1179,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\lua_std.lib ..\..\bin\glfw_std.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				SubSystem="1"
@@ -1246,7 +1246,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -1263,17 +1263,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\lua_st32.lib ..\..\bin\glfw_st32.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st32.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				SubSystem="1"
@@ -1333,7 +1333,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -1350,17 +1350,17 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay;..\..\external\luajit"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\lua_st.lib ..\..\bin\glfw_st.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories=""
+				AdditionalLibraryDirectories="..\..\external\luajit\win32"
 				GenerateDebugInformation="true"
 				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				SubSystem="1"
