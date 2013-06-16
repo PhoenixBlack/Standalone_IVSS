@@ -24,6 +24,39 @@ project "lua"
      "../external/lua/src/luac.c",
      "../external/lua/src/print.c",
    }
+
+
+--------------------------------------------------------------------------------
+-- GLFW
+--------------------------------------------------------------------------------
+if os.is("windows") then
+   project "glfw"
+      uuid "D15A53B8-EDE5-8C4E-90AF-09F47C48DA45"
+      kind "StaticLib"
+      language "C"
+      includedirs { "../external/glfw/include" }
+      includedirs { "../external/glfw/deps" }
+      files {
+        "../external/glfw/src/internal.h",
+        
+        "../external/glfw/src/clipboard.c",
+        "../external/glfw/src/context.c",
+        "../external/glfw/src/gamma.c",
+        "../external/glfw/src/init.c",
+        "../external/glfw/src/input.c",
+        "../external/glfw/src/joystick.c",
+        "../external/glfw/src/monitor.c",
+        "../external/glfw/src/time.c",
+        "../external/glfw/src/window.c",
+      }
+      configuration { "windows" }
+        files { "../external/glfw/src/win32_*.c" }
+        files { "../external/glfw/src/wgl_*.c" }
+        includedirs { "../external/config/glfw_win32" }
+      configuration { "linux" }
+        files { "../external/glfw/src/x11_*.c" }
+        includedirs { "../external/config/glfw_x11" }
+end
    
 
 --------------------------------------------------------------------------------
@@ -38,6 +71,8 @@ project "standalone_ivss"
      "../external/ivss/include",
      "../external/simc/include",
      "../external/lua/src",
+     "../external/glfw/include",
+     "../external/glfw/deps/GL",
      "../source",
      "../external/ivss/addons/ivss_sim_lua",
      "../external/ivss/addons/ivss_sim_gldisplay",
@@ -47,4 +82,7 @@ project "standalone_ivss"
      "../external/ivss/addons/ivss_sim_lua/**",
      "../external/ivss/addons/ivss_sim_gldisplay/**",
    }
-   links { "simc", "ivss", "lua" }
+   links { "simc", "ivss", "lua", "glfw" }
+   
+   configuration "windows"
+      links { "opengl32" }

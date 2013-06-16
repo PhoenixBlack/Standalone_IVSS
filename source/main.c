@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ivss.h>
 #include "ivss_sim_lua.h"
+#include "ivss_sim_gldisplay.h"
 
 void main(int argc, char **argv) {
 	IVSS_SYSTEM* system;
@@ -21,6 +22,7 @@ void main(int argc, char **argv) {
 	IVSS_System_Create(&system);
 	IVSS_Common_Register(system);
 	IVSS_Simulator_Lua_Register(system);
+	IVSS_Simulator_GLDisplay_Register(system);
 	
 	//Load configuration file
 	printf("Loading configuration...\n");
@@ -31,7 +33,9 @@ void main(int argc, char **argv) {
 
 	//Do nothing
 	while (1) {
-		SIMC_Thread_Sleep(1000.0);
+		glfwPollEvents();
+		SIMC_Thread_Sleep(0.0);
+		//SIMC_Thread_Sleep(1000.0);
 	}
 
 	//Destroy simulation and return

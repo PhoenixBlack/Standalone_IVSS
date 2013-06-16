@@ -10,3 +10,6 @@
 [submodule "external/pce"]
 	path = external/pce
 	url = git://git.hampa.ch/pce.git
+[submodule "external/glfw"]
+	path = external/glfw
+	url = https://github.com/glfw/glfw.git
