@@ -6,7 +6,6 @@
 	ProjectGUID="{62FCF23A-66A2-43EF-BADA-A371523BEF57}"
 	RootNamespace="standalone_ivss"
 	Keyword="Win32Proj"
-	TargetFrameworkVersion="0"
 	>
 	<Platforms>
 		<Platform
@@ -44,15 +43,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -62,7 +61,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -74,6 +73,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="1"
@@ -95,6 +95,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -126,15 +129,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -144,7 +147,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -156,6 +159,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="17"
@@ -177,6 +181,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -207,14 +214,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -224,7 +231,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -236,6 +243,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -259,6 +267,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -290,14 +301,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -307,7 +318,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -319,6 +330,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -342,6 +354,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -372,15 +387,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -390,7 +405,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -402,6 +417,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd32.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="1"
@@ -423,6 +439,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -454,15 +473,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -472,7 +491,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -484,6 +503,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivssd.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="17"
@@ -505,6 +525,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -535,14 +558,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -552,7 +575,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -564,6 +587,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss32.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -587,6 +611,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -618,14 +645,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -635,7 +662,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -647,6 +674,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -670,6 +698,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -700,15 +731,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -718,7 +749,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -730,6 +761,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="1"
@@ -751,6 +783,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -782,15 +817,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -800,7 +835,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -812,6 +847,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="17"
@@ -833,6 +869,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -863,14 +902,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -880,7 +919,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -892,6 +931,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -915,6 +955,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -946,14 +989,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -963,7 +1006,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -975,6 +1018,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -998,6 +1042,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1028,15 +1075,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -1046,7 +1093,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -1058,6 +1105,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std32.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="1"
@@ -1079,6 +1127,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1110,15 +1161,15 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1128,7 +1179,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -1140,6 +1191,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_std.pdb"
 				SubSystem="1"
 				EntryPointSymbol="mainCRTStartup"
 				TargetMachine="17"
@@ -1161,6 +1213,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1191,14 +1246,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1208,7 +1263,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -1220,6 +1275,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st32.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -1243,6 +1299,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1274,14 +1333,14 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="3"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1291,7 +1350,7 @@
 			<Tool
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64"
-				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua"
+				AdditionalIncludeDirectories="..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\lua\src;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_sim_gldisplay"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -1303,6 +1362,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\standalone_ivss_st.pdb"
 				SubSystem="1"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -1328,6 +1388,9 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -1337,9 +1400,24 @@
 	<Files>
 		<Filter
 			Name="addons"
+			Filter=""
 			>
 			<Filter
+				Name="ivss_sim_gldisplay"
+				Filter=""
+				>
+				<File
+					RelativePath="..\..\external\ivss\addons\ivss_sim_gldisplay\ivss_sim_gldisplay.c"
+					>
+				</File>
+				<File
+					RelativePath="..\..\external\ivss\addons\ivss_sim_gldisplay\ivss_sim_gldisplay.h"
+					>
+				</File>
+			</Filter>
+			<Filter
 				Name="ivss_sim_lua"
+				Filter=""
 				>
 				<File
 					RelativePath="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.c"

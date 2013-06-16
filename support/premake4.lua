@@ -40,9 +40,11 @@ project "standalone_ivss"
      "../external/lua/src",
      "../source",
      "../external/ivss/addons/ivss_sim_lua",
+     "../external/ivss/addons/ivss_sim_gldisplay",
    }
    files {
      "../source/**",
      "../external/ivss/addons/ivss_sim_lua/**",
+     "../external/ivss/addons/ivss_sim_gldisplay/**",
    }
    links { "simc", "ivss", "lua" }
