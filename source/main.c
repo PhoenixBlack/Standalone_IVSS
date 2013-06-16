@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ivss.h>
+#include "ivss_sim_lua.h"
 
 void main(int argc, char **argv) {
 	IVSS_SYSTEM* system;
@@ -19,6 +20,7 @@ void main(int argc, char **argv) {
 	printf("--------------------------------------------------------------------------------");
 	IVSS_System_Create(&system);
 	IVSS_Common_Register(system);
+	IVSS_Simulator_Lua_Register(system);
 	
 	//Load configuration file
 	printf("Loading configuration...\n");
