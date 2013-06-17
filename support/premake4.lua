@@ -77,12 +77,12 @@ project "standalone_ivss"
      "../external/glfw/deps/GL",
      "../source",
      "../external/ivss/addons/ivss_sim_lua",
-     "../external/ivss/addons/ivss_sim_gldisplay",
+     "../external/ivss/addons/ivss_win_lcdscreen",
    }
    files {
      "../source/**",
      "../external/ivss/addons/ivss_sim_lua/**",
-     "../external/ivss/addons/ivss_sim_gldisplay/**",
+     "../external/ivss/addons/ivss_win_lcdscreen/**",
    }
    links { "simc", "ivss", "glfw" }
    

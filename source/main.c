@@ -4,7 +4,7 @@
 #include <GLFW/glfw3.h>
 #include <ivss.h>
 #include "ivss_sim_lua.h"
-#include "ivss_sim_gldisplay.h"
+#include "ivss_win_lcdscreen.h"
 
 void main(int argc, char **argv) {
 	IVSS_SYSTEM* system;
@@ -23,7 +23,7 @@ void main(int argc, char **argv) {
 	IVSS_System_Create(&system);
 	IVSS_Common_Register(system);
 	IVSS_Simulator_Lua_Register(system);
-	IVSS_Simulator_GLDisplay_Register(system);
+	IVSS_Window_LCDScreen_Register(system);
 	
 	//Load configuration file
 	printf("Loading configuration...\n");
