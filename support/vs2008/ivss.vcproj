@@ -6,7 +6,6 @@
 	ProjectGUID="{7C47D0FF-1A6A-4226-8282-DF7162F6A908}"
 	RootNamespace="ivss"
 	Keyword="Win32Proj"
-	TargetFrameworkVersion="0"
 	>
 	<Platforms>
 		<Platform
@@ -51,8 +50,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivssd32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivssd32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -69,11 +68,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X86"
 				OutputFile="$(OutDir)\ivssd32.lib"
+				AdditionalOptions="/MACHINE:X86"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -83,6 +85,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -121,8 +129,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivssd.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivssd.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -139,11 +147,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X64"
 				OutputFile="$(OutDir)\ivssd.lib"
+				AdditionalOptions="/MACHINE:X64"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -153,6 +164,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -189,8 +206,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -207,11 +224,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X86"
 				OutputFile="$(OutDir)\ivss32.lib"
+				AdditionalOptions="/MACHINE:X86"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -221,6 +241,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -258,8 +284,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -276,11 +302,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X64"
 				OutputFile="$(OutDir)\ivss.lib"
+				AdditionalOptions="/MACHINE:X64"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -290,6 +319,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -327,8 +362,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivssd32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivssd32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -349,6 +384,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivssd32.pdb"
 				SubSystem="2"
 				ImportLibrary="..\..\bin\ivssd32.lib"
 				TargetMachine="1"
@@ -370,6 +406,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -408,8 +447,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivssd.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivssd.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -430,6 +469,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivssd.pdb"
 				SubSystem="2"
 				ImportLibrary="..\..\bin\ivssd.lib"
 				TargetMachine="17"
@@ -451,6 +491,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -487,8 +530,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -509,6 +552,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss32.pdb"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -532,6 +576,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -569,8 +616,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -591,6 +638,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss.pdb"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -614,6 +662,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -651,8 +702,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_std32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -669,11 +720,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X86"
 				OutputFile="$(OutDir)\ivss_std32.lib"
+				AdditionalOptions="/MACHINE:X86"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -683,6 +737,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -721,8 +781,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_std.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -739,11 +799,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X64"
 				OutputFile="$(OutDir)\ivss_std.lib"
+				AdditionalOptions="/MACHINE:X64"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -753,6 +816,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -789,8 +858,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_st32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -807,11 +876,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X86"
 				OutputFile="$(OutDir)\ivss_st32.lib"
+				AdditionalOptions="/MACHINE:X86"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -821,6 +893,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -858,8 +936,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_st.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -876,11 +954,14 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				AdditionalOptions="/MACHINE:X64"
 				OutputFile="$(OutDir)\ivss_st.lib"
+				AdditionalOptions="/MACHINE:X64"
 			/>
 			<Tool
 				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -890,6 +971,12 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -927,8 +1014,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_std32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std32.pdb"
 				DebugInformationFormat="4"
 				CompileAs="1"
 			/>
@@ -949,6 +1036,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std32.pdb"
 				SubSystem="2"
 				ImportLibrary="..\..\bin\ivss_std32.lib"
 				TargetMachine="1"
@@ -970,6 +1058,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1008,8 +1099,8 @@
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_std.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1030,6 +1121,7 @@
 				LinkIncremental="2"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss_std.pdb"
 				SubSystem="2"
 				ImportLibrary="..\..\bin\ivss_std.lib"
 				TargetMachine="17"
@@ -1051,6 +1143,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1087,8 +1182,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_st32.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st32.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1109,6 +1204,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st32.pdb"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -1132,6 +1228,9 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -1169,8 +1268,8 @@
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="0"
-				ProgramDataBaseFileName="$(OutDir)\ivss_st.pdb"
 				WarningLevel="3"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st.pdb"
 				DebugInformationFormat="3"
 				CompileAs="1"
 			/>
@@ -1191,6 +1290,7 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories=""
 				GenerateDebugInformation="true"
+				ProgramDataBaseFileName="$(OutDir)\ivss_st.pdb"
 				SubSystem="2"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -1216,6 +1316,9 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
 				Name="VCPostBuildEventTool"
 			/>
 		</Configuration>
@@ -1225,6 +1328,7 @@
 	<Files>
 		<Filter
 			Name="include"
+			Filter=""
 			>
 			<File
 				RelativePath="..\..\external\ivss\include\ivss.h"
@@ -1241,16 +1345,18 @@
 		</Filter>
 		<Filter
 			Name="source"
+			Filter=""
 			>
 			<Filter
 				Name="ivss_common"
+				Filter=""
 				>
 				<File
 					RelativePath="..\..\external\ivss\source\ivss_common\ivss_sim_lcdscreen.c"
 					>
 				</File>
 				<File
-					RelativePath="..\..\external\ivss\source\ivss_common\ivss_sim_lcdscreen_font.h"
+					RelativePath="..\..\external\ivss\source\ivss_common\ivss_sim_network.c"
 					>
 				</File>
 				<File
@@ -1261,9 +1367,14 @@
 					RelativePath="..\..\external\ivss\source\ivss_common\ivss_sim_video.c"
 					>
 				</File>
+				<File
+					RelativePath="..\..\external\ivss\source\ivss_common\ivss_sim_video_font.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="ivss_core"
+				Filter=""
 				>
 				<File
 					RelativePath="..\..\external\ivss\source\ivss_core\ivss_link.c"

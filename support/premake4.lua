@@ -102,4 +102,4 @@ project "standalone_ivss"
    end
    
    configuration "windows"
-      links { "opengl32" }
+      links { "opengl32","wsock32" }

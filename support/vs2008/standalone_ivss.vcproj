@@ -69,7 +69,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd32.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -151,7 +151,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -231,7 +231,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss32.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -314,7 +314,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -397,7 +397,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd32.lib ..\..\bin\ivssd32.lib ..\..\bin\glfwd32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd32.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -479,7 +479,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simcd.lib ..\..\bin\ivssd.lib ..\..\bin\glfwd.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivssd.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -559,7 +559,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc32.lib ..\..\bin\ivss32.lib ..\..\bin\glfw32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss32.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -642,7 +642,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc.lib ..\..\bin\ivss.lib ..\..\bin\glfw.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -725,7 +725,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std32.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -807,7 +807,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -887,7 +887,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st32.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -970,7 +970,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -1053,7 +1053,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std32.lib ..\..\bin\ivss_std32.lib ..\..\bin\glfw_std32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std32.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -1135,7 +1135,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_std.lib ..\..\bin\ivss_std.lib ..\..\bin\glfw_std.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_std.exe"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -1215,7 +1215,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st32.lib ..\..\bin\ivss_st32.lib ..\..\bin\glfw_st32.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st32.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -1298,7 +1298,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib"
+				AdditionalDependencies="..\..\bin\simc_st.lib ..\..\bin\ivss_st.lib ..\..\bin\glfw_st.lib luajit.lib opengl32.lib wsock32.lib"
 				OutputFile="$(OutDir)\standalone_ivss_st.exe"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="..\..\external\luajit\win32"
@@ -1347,6 +1347,14 @@
 				</File>
 				<File
 					RelativePath="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.c"
+					>
+				</File>
+				<File
+					RelativePath="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.h"
 					>
 				</File>
 				<File
