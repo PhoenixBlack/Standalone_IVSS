@@ -89,13 +89,10 @@ project "standalone_ivss"
    if USE_LUAJIT then
      links "luajit"
      includedirs "../external/luajit"
-     if os.is("windows") then
-       if os.is64bit() then
-         libdirs "../external/luajit/win64"
-       else
-         libdirs "../external/luajit/win32"
-       end
-     end
+     configuration { "windows", "x32" }
+        libdirs "../external/luajit/win32"
+     configuration { "windows", "x64" }
+        libdirs "../external/luajit/win64"
    else
      links "lua"
      includedirs "../external/lua/src"
