@@ -4,7 +4,9 @@ etc/*
 doc/*/*
 export/*
 debug/*
-qtmoc/*
+
+## Private files not for GitHub
+private/*
 
 ## OS-specific
 Thumbs.db
@@ -18,6 +20,8 @@ support/vs2003/*/*
 support/vs2005/*/*
 support/vs2008/*/*
 support/vs2010/*/*
+support/vs2012/*/*
+support/vs2013/*/*
 *.suo
 *.user
 *.sln.docstates

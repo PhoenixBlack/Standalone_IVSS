@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ivss">
+      <UniqueIdentifier>{61830E37-A705-064A-A244-830E816734E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\source">
+      <UniqueIdentifier>{B67D17D7-223F-834E-A69F-5542F58A0912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\source\ivss_core">
+      <UniqueIdentifier>{6F003C8C-0462-4841-908F-33C2A3AB8A90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\source\ivss_common">
+      <UniqueIdentifier>{2BD233A9-AD0B-5A40-8E49-05A6E885C04F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\include">
+      <UniqueIdentifier>{1116A6E1-2AEE-4943-80AC-3708B6D573CD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\ivss\source\ivss_common\ivss_sim_video_font.h">
+      <Filter>ivss\source\ivss_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\ivss\include\ivss.h">
+      <Filter>ivss\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\ivss\include\ivss_internal.h">
+      <Filter>ivss\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_failure.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_link.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_load.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_system.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_unit.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_util.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_core\ivss_variable.c">
+      <Filter>ivss\source\ivss_core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_common\ivss_sim_lcdscreen.c">
+      <Filter>ivss\source\ivss_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_common\ivss_sim_network.c">
+      <Filter>ivss\source\ivss_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_common\ivss_sim_signal.c">
+      <Filter>ivss\source\ivss_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\source\ivss_common\ivss_sim_video.c">
+      <Filter>ivss\source\ivss_common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDynamic|Win32">
+      <Configuration>DebugDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDynamic|x64">
+      <Configuration>DebugDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDynamic|Win32">
+      <Configuration>ReleaseDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDynamic|x64">
+      <Configuration>ReleaseDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThread|Win32">
+      <Configuration>DebugSingleThread</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThread|x64">
+      <Configuration>DebugSingleThread</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThread|Win32">
+      <Configuration>ReleaseSingleThread</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThread|x64">
+      <Configuration>ReleaseSingleThread</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThreadDynamic|Win32">
+      <Configuration>DebugSingleThreadDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThreadDynamic|x64">
+      <Configuration>DebugSingleThreadDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThreadDynamic|Win32">
+      <Configuration>ReleaseSingleThreadDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThreadDynamic|x64">
+      <Configuration>ReleaseSingleThreadDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CE2BC989-5641-194B-A3B7-01020475664D}</ProjectGuid>
+    <RootNamespace>lua</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\Debug\lua\</IntDir>
+    <TargetName>luad32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\Debug\lua\</IntDir>
+    <TargetName>luad</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\Release\lua\</IntDir>
+    <TargetName>lua32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\Release\lua\</IntDir>
+    <TargetName>lua</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugDynamic\lua\</IntDir>
+    <TargetName>luad32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugDynamic\lua\</IntDir>
+    <TargetName>luad</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseDynamic\lua\</IntDir>
+    <TargetName>lua32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseDynamic\lua\</IntDir>
+    <TargetName>lua</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugSingleThread\lua\</IntDir>
+    <TargetName>lua_std32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugSingleThread\lua\</IntDir>
+    <TargetName>lua_std</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseSingleThread\lua\</IntDir>
+    <TargetName>lua_st32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseSingleThread\lua\</IntDir>
+    <TargetName>lua_st</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugSingleThreadDynamic\lua\</IntDir>
+    <TargetName>lua_std32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugSingleThreadDynamic\lua\</IntDir>
+    <TargetName>lua_std</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseSingleThreadDynamic\lua\</IntDir>
+    <TargetName>lua_st32</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseSingleThreadDynamic\lua\</IntDir>
+    <TargetName>lua_st</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)luad32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)luad32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)luad.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)luad.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)luad32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)luad32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)luad.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)luad.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_std32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_std32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_std.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_std.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_st32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_st32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_st.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_st.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_std32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_std32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_std.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_std.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_st32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_st32.lib</OutputFile>
+    <TargetMachine>MachineX86</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)lua_st.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  <Lib>
+    <OutputFile>$(OutDir)lua_st.lib</OutputFile>
+    <TargetMachine>MachineX64</TargetMachine>
+  </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\lua\src\lapi.h" />
+    <ClInclude Include="..\..\external\lua\src\lauxlib.h" />
+    <ClInclude Include="..\..\external\lua\src\lcode.h" />
+    <ClInclude Include="..\..\external\lua\src\ldebug.h" />
+    <ClInclude Include="..\..\external\lua\src\ldo.h" />
+    <ClInclude Include="..\..\external\lua\src\lfunc.h" />
+    <ClInclude Include="..\..\external\lua\src\lgc.h" />
+    <ClInclude Include="..\..\external\lua\src\llex.h" />
+    <ClInclude Include="..\..\external\lua\src\llimits.h" />
+    <ClInclude Include="..\..\external\lua\src\lmem.h" />
+    <ClInclude Include="..\..\external\lua\src\lobject.h" />
+    <ClInclude Include="..\..\external\lua\src\lopcodes.h" />
+    <ClInclude Include="..\..\external\lua\src\lparser.h" />
+    <ClInclude Include="..\..\external\lua\src\lstate.h" />
+    <ClInclude Include="..\..\external\lua\src\lstring.h" />
+    <ClInclude Include="..\..\external\lua\src\ltable.h" />
+    <ClInclude Include="..\..\external\lua\src\ltm.h" />
+    <ClInclude Include="..\..\external\lua\src\lua.h" />
+    <ClInclude Include="..\..\external\lua\src\luaconf.h" />
+    <ClInclude Include="..\..\external\lua\src\lualib.h" />
+    <ClInclude Include="..\..\external\lua\src\lundump.h" />
+    <ClInclude Include="..\..\external\lua\src\lvm.h" />
+    <ClInclude Include="..\..\external\lua\src\lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\lua\src\lapi.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lauxlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lbaselib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lcode.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ldblib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ldebug.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ldo.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ldump.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lfunc.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lgc.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\linit.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\liolib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\llex.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lmathlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lmem.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\loadlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lobject.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lopcodes.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\loslib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lparser.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lstate.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lstring.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lstrlib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ltable.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ltablib.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\ltm.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lundump.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lvm.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\lua\src\lzio.c">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\external\lua\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

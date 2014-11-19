@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDynamic|Win32">
+      <Configuration>DebugDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDynamic|x64">
+      <Configuration>DebugDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDynamic|Win32">
+      <Configuration>ReleaseDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDynamic|x64">
+      <Configuration>ReleaseDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThread|Win32">
+      <Configuration>DebugSingleThread</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThread|x64">
+      <Configuration>DebugSingleThread</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThread|Win32">
+      <Configuration>ReleaseSingleThread</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThread|x64">
+      <Configuration>ReleaseSingleThread</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThreadDynamic|Win32">
+      <Configuration>DebugSingleThreadDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSingleThreadDynamic|x64">
+      <Configuration>DebugSingleThreadDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThreadDynamic|Win32">
+      <Configuration>ReleaseSingleThreadDynamic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSingleThreadDynamic|x64">
+      <Configuration>ReleaseSingleThreadDynamic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62FCF23A-66A2-43EF-BADA-A371523BEF57}</ProjectGuid>
+    <RootNamespace>standalone_ivss</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\Debug\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivssd32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\Debug\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivssd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\Release\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\Release\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivssd32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivssd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugSingleThread\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_std32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugSingleThread\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_std</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseSingleThread\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_st32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseSingleThread\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_st</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\DebugSingleThreadDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_std32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\DebugSingleThreadDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_std</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x32\ReleaseSingleThreadDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_st32</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'">
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>obj\x64\ReleaseSingleThreadDynamic\standalone_ivss\</IntDir>
+    <TargetName>standalone_ivss_st</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivssd32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivssd32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivssd.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivssd.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivssd32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivssd32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivssd.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivssd.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_std32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_std32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThread|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_std.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_std.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_st32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_st32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThread|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_st.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_st.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_std32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_std32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSingleThreadDynamic|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_std.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_std.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_st32.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_st32.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSingleThreadDynamic|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)standalone_ivss_st.pdb</ProgramDataBaseFileName>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>EVDS_DYNAMIC;IVSS_DYNAMIC;RDRS_DYNAMIC;SIMC_DYNAMIC;EVDS_SINGLETHREADED;IVSS_SINGLETHREADED;RDRS_SINGLETHREADED;SIMC_SINGLETHREADED;_CRT_SECURE_NO_WARNINGS;WIN32;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\include;..\..\external\ivss\include;..\..\external\simc\include;..\..\external\glfw\include;..\..\external\glfw\deps\GL;..\..\source;..\..\external\ivss\addons\ivss_sim_lua;..\..\external\ivss\addons\ivss_win_lcdscreen;..\..\external\lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)standalone_ivss_st.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.h" />
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.h" />
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_sim_lua.h" />
+    <ClInclude Include="..\..\external\ivss\addons\ivss_win_lcdscreen\ivss_win_lcdscreen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\main.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_sim_lua.c">
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_win_lcdscreen\ivss_win_lcdscreen.c">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="simc.vcxproj">
+      <Project>{00058543-E5EA-1540-B535-BCE859AA319E}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ivss.vcxproj">
+      <Project>{7C47D0FF-1A6A-4226-8282-DF7162F6A908}</Project>
+    </ProjectReference>
+    <ProjectReference Include="glfw.vcxproj">
+      <Project>{D15A53B8-EDE5-8C4E-90AF-09F47C48DA45}</Project>
+    </ProjectReference>
+    <ProjectReference Include="lua.vcxproj">
+      <Project>{CE2BC989-5641-194B-A3B7-01020475664D}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

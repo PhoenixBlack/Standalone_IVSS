@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ivss">
+      <UniqueIdentifier>{45DD5A65-AF38-CE4D-B9E3-389529E3798F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\addons">
+      <UniqueIdentifier>{FAEB4986-295B-6C4F-AD3B-0B534C700C70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\addons\ivss_sim_lua">
+      <UniqueIdentifier>{CB668B2E-1C5D-064A-888F-C6B9F24160B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ivss\addons\ivss_win_lcdscreen">
+      <UniqueIdentifier>{8EAFD9A1-7A71-D44E-903F-8CD8AC08BC87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.h">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.h">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_sim_lua.h">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\ivss\addons\ivss_win_lcdscreen\ivss_win_lcdscreen.h">
+      <Filter>ivss\addons\ivss_win_lcdscreen</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\main.c" />
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua.c">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_lua_vec.c">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_sim_lua\ivss_sim_lua.c">
+      <Filter>ivss\addons\ivss_sim_lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\ivss\addons\ivss_win_lcdscreen\ivss_win_lcdscreen.c">
+      <Filter>ivss\addons\ivss_win_lcdscreen</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

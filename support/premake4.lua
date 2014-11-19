@@ -13,7 +13,7 @@ if not os.isdir("../debug") then os.mkdir("../debug") end
 --------------------------------------------------------------------------------
 -- Lua
 --------------------------------------------------------------------------------
-local USE_LUAJIT = true
+local USE_LUAJIT = false
 if not USE_LUAJIT then
    project "lua"
       uuid "CE2BC989-5641-194B-A3B7-01020475664D"

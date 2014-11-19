@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="glfw">
+      <UniqueIdentifier>{B4FEF4BB-036F-6E45-AE50-54F2538EAE0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw\src">
+      <UniqueIdentifier>{C206312D-0119-5842-9E72-ADA63FB00A59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\glfw\src\internal.h">
+      <Filter>glfw\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\glfw\src\clipboard.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\context.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\gamma.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\init.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\input.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\joystick.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\monitor.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\time.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\window.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_clipboard.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_gamma.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_init.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_joystick.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_monitor.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_time.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\win32_window.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\glfw\src\wgl_context.c">
+      <Filter>glfw\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
